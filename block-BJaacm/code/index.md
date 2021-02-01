@@ -15,21 +15,22 @@ let newUser = user;
 - Take a photo/screenshot and add it to the folder `code`
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+![hello.jpg](./hello.jpg)
 
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // True same memory reference
+- `user === newUser;` // True same memory reference
+- `user.name === newUser.name;` // True same memory reference
+- `user.name == newUser.name;` // True same memory reference
+- `user.sibling == newUser.sibling;` // True same memory reference
+- `user.sibling === newUser.sibling;` // True same memory reference
+- `user.sibling == allBrothers;` // False different memory reference
+- `user.sibling === allBrothers;` // False different memory reference
+- `brothersCopy === allBrothers;` // False different memory reference
+- `brothersCopy == allBrothers;` // False different memory reference
+- `brothersCopy == user.sibling;` // True same memory reference
+- `brothersCopy === user.sibling;` // True same memory reference
+- `brothersCopy[0] === user.sibling[0];` // True same memory reference
+- `brothersCopy[1] === user.sibling[1];` // True same memory reference
+- `user.sibling[1] === newUser.sibling[1];` // True same memory reference
